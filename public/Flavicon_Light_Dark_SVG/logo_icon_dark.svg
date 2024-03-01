@@ -18,7 +18,7 @@
        id="g4-0-9"
        transform="matrix(0.09247035,0.27210731,-0.27210731,0.09247035,44.943922,92.535824)">
       <path
-         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.527651;stroke-linecap:square;stroke-opacity:1;paint-order:markers stroke fill; fill: white;"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.527651;stroke-linecap:square;stroke-opacity:1;paint-order:markers stroke fill; fill: white; stroke: none;"
          d="m 133.11705,91.072417 -29.76906,63.858233 8.38918,4.8435 9.68667,-12.09129 h 5.8813 l -3.64237,6.30876 h 9.45428 9.45428 l -3.64237,-6.30876 h 5.8813 l 9.68667,12.09129 8.38918,-4.8435 z"
          id="path1-7-8-2"
          transform="translate(14.997339,-4.4584252)" />
