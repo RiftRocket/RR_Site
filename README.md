@@ -8,7 +8,7 @@ Install the required dependencies:
 npm install
 ```
 
-## 🚀 Developing
+## 🛠️ Developing
 
 If you want to develop locally use:
 
@@ -16,7 +16,7 @@ If you want to develop locally use:
 npm run dev
 ```
 
-## 🚀 Building
+## 🔧 Building
 
 When you're ready to create a production build use:
 
@@ -33,3 +33,9 @@ npm run build
 ```
 npm run format
 ```
+
+## 🔍 Linting
+To be updated.
+
+## 🧪 Testing
+To be updated.
