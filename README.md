@@ -35,7 +35,9 @@ npm run format
 ```
 
 ## 🔍 Linting
+
 To be updated.
 
 ## 🧪 Testing
+
 To be updated.
