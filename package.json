@@ -7,6 +7,7 @@
 		"build": "tsc && vite build",
 		"preview": "vite preview",
 		"format": "npx prettier . --write --config prettierrc.json",
+		"format-check": "npx prettier . --check --config prettierrc.json",
 		"lint": "npx eslint .",
 		"test": "jest"
 	},
