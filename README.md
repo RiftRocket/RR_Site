@@ -30,20 +30,21 @@ npm run build
 
 ## 🌟 Code Formatting
 
-keep our codebase polished and consistent with these options
+keep our codebase polished and consistent with these options:
 
 To check for formatting problems
+
 ```
 npm run format-check
 ```
 
 To fix formatting problems
+
 ```
 npm run format
 ```
+
 or
-
-
 
 ## 🔍 Linting
 
