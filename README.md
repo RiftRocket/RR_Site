@@ -29,15 +29,22 @@ npm run build
 ```
 
 ## 🌟 Code Formatting
+keep our codebase polished and consistent with:
 
 ```
 npm run format
 ```
 
 ## 🔍 Linting
+Ensure your code meets the project's standards
 
-To be updated.
+```
+npm run lint
+```
 
 ## 🧪 Testing
+Ensure stability and reliability by running our test suite:
 
-To be updated.
+```
+npm run test
+```
