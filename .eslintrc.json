@@ -26,9 +26,9 @@
 		"no-var": ["error"],
 		"prefer-const": ["error"],
 		"no-const-assign": ["error"],
-		"arrow-body-style": ["error","always"],
-		"arrow-parens": ["error","always"],
-		"eqeqeq": ["error","always"]
+		"arrow-body-style": ["error", "always"],
+		"arrow-parens": ["error", "always"],
+		"eqeqeq": ["error", "always"]
 	},
 	"ignorePatterns": ["**/dist/**/*.js", "jest.config.js"]
 }
