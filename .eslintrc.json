@@ -14,7 +14,21 @@
 		"indent": ["error", "tab"],
 		"linebreak-style": ["error", "unix"],
 		"semi": ["error", "always"],
-		"quotes": ["error", "single"]
+		"quotes": ["error", "single"],
+		"no-unused-vars": [
+			"error",
+			{
+				"vars": "all",
+				"args": "all"
+			}
+		],
+		"no-unreachable": ["error"],
+		"no-var": ["error"],
+		"prefer-const": ["error"],
+		"no-const-assign": ["error"],
+		"arrow-body-style": ["error","always"],
+		"arrow-parens": ["error","always"],
+		"eqeqeq": ["error","always"]
 	},
 	"ignorePatterns": ["**/dist/**/*.js", "jest.config.js"]
 }
