@@ -1,13 +1,6 @@
 import './index.scss';
+import { Footer } from './scripts/components/footer.ts';
 
 document.addEventListener('DOMContentLoaded', function () {
-	addCurrentYearFooter();
+	new Footer();
 });
-
-function addCurrentYearFooter() {
-	const footerYear = document.querySelector('.footer__year');
-	if (footerYear) {
-		const currentYear = new Date().getFullYear();
-		footerYear.textContent = currentYear.toString();
-	}
-}

@@ -37,8 +37,6 @@ To check for formatting problems
 ```
 npm run format-check
 ```
-or
-
 To fix formatting problems
 
 ```
