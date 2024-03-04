@@ -1,83 +1,86 @@
 @import '../mixins';
 
 .header {
-    background: var(--color-background-darker);
-    font-size: 1.6rem;
-    border-bottom: 0.1rem solid var(--color-transparent-white);
-    font-weight: var(--weight-semi-bold);
+	background: var(--color-background-darker);
+	font-size: 1.6rem;
+	border-bottom: 0.1rem solid var(--color-transparent-white);
+	font-weight: var(--weight-semi-bold);
 
+	&__content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1.5rem 3rem;
+	}
 
-    &__content{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1.5rem 3rem;
-    }
+	&__content-item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 
-    &__content-item{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+	&__menu-item-container {
+		display: none;
 
-    &__menu-item-container{
-        display: none;
+		@include responsive('tablet') {
+			display: flex;
+			margin-left: 0;
+		}
+	}
 
-        @include responsive('tablet') {
-            display: flex;
-            margin-left: 0;
-        }
-    }
+	&__menu-item {
+		display: inline-block;
+		cursor: pointer;
+		text-decoration: none;
 
-    &__menu-item{
-        display: inline-block;
-        cursor: pointer;
-        text-decoration: none;
+		&:visited {
+			color: var(--color-text-primary);
+		}
 
-        &:visited{
-            color: var(--color-text-primary);
-        }
+		&:first-child {
+			margin-left: 0;
+		}
 
-        &:first-child{
-            margin-left: 0;
-        }
+		&:hover {
+			color: var(--color-text-secondary);
+		}
 
-        &:hover{
-            color: var(--color-text-secondary);
-        }
+		@include responsive('tablet') {
+			font-size: 2rem;
+			margin-left: 3rem;
+			animation: menuItemAppear 0.3s linear;
+		}
+	}
 
-        @include responsive('tablet') {
-            font-size: 2rem;
-            margin-left: 3rem;
-            animation: menuItemAppear 0.3s linear;
-        }
+	&__logo-link {
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		padding: 0.5rem 0;
+	}
 
-    }
+	&__logo {
+		height: 2rem;
+		pointer-events: none;
+	}
 
-    &__logo-link{
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        padding: 0.5rem 0;
-    }
+	&__menu-icon {
+		display: flex;
+		justify-content: center;
 
-    &__logo{
-        height: 2rem;
-        pointer-events: none;
-    }
-
-    &__menu-icon{
-        display: flex;
-        justify-content: center;
-
-        @include responsive('tablet') {
-                display: none;
-        }
-    }
+		@include responsive('tablet') {
+			display: none;
+		}
+	}
 }
 
-@keyframes menuItemAppear{
-    from {display: none; opacity: 0;}
-    to {display: flex; opacity: 1;}
+@keyframes menuItemAppear {
+	from {
+		display: none;
+		opacity: 0;
+	}
+	to {
+		display: flex;
+		opacity: 1;
+	}
 }
-
