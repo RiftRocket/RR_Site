@@ -22,6 +22,11 @@
 
     &__menu-item-container{
         display: none;
+
+        @include responsive('tablet') {
+            display: flex;
+            margin-left: 0;
+        }
     }
 
     &__menu-item{
@@ -40,6 +45,13 @@
         &:hover{
             color: var(--color-text-secondary);
         }
+
+        @include responsive('tablet') {
+            font-size: 2rem;
+            margin-left: 3rem;
+            animation: menuItemAppear 0.3s linear;
+        }
+
     }
 
     &__logo-link{
@@ -57,22 +69,9 @@
     &__menu-icon{
         display: flex;
         justify-content: center;
-    }
 
-    @include responsive('tablet'){
-        &__menu-item{
-        font-size: 2rem;
-        margin-left: 3rem;
-        animation: menuItemAppear 0.3s linear;
-        }
-
-        &__menu-item-container{
-            display: flex;
-            margin-left: 0;
-        }
-
-        &__menu-icon{
-            display: none;
+        @include responsive('tablet') {
+                display: none;
         }
     }
 }
