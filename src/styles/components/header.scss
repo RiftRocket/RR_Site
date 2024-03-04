@@ -3,7 +3,7 @@
 .header {
     background: var(--color-background-darker);
     font-size: 1.6rem;
-    border-bottom: 0.1rem solid #5d5c61;
+    border-bottom: 0.1rem solid var(--color-transparent-white);
     font-weight: var(--weight-semi-bold);
     
 
@@ -58,7 +58,6 @@
     &__menu-icon{
         display: flex;
         justify-content: center;
-        animation: menuItemappear 0.2s linear;
     }
 
     @include responsive('tablet'){
@@ -68,13 +67,8 @@
         animation: menuItemAppear 0.3s linear;
         }
 
-        &__content-item{
-            margin-left: 3rem;
-        }
-
         &__menu-item-container{
             display: flex;
-            margin-right: 3rem;
             margin-left: 0;
         }
     
