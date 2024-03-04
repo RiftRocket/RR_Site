@@ -4,14 +4,9 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>RiftRocket</title>
-		<link href="/Flavicon_Light_Dark_SVG/logo_icon_light.svg" rel="icon" media="(prefers-color-scheme: light)">
-		<link href="/Flavicon_Light_Dark_SVG/logo_icon_dark.svg" rel="icon" media="(prefers-color-scheme: dark)">
+		<link href="/images/light/logo_favicon.svg" rel="icon" media="(prefers-color-scheme: light)">
+		<link href="/images/dark/logo_favicon.svg" rel="icon" media="(prefers-color-scheme: dark)">
 		<style>
-			main {
-				height: 100vh;
-				position: relative;
-			}
-
 			.under-construction {
 				position: absolute;
 				top: 50%;
@@ -29,7 +24,17 @@
 				<p>Under Construction</p>
 			</section>
 		</main>
-		<footer></footer>
+		<footer class="footer">
+			<div class="footer__content">
+				<p class="footer__content-item">Made by the
+					<a class="footer__logo-link" href="/" aria-label="Rift Rocket Logo Link">
+						<object class="footer__logo" type="image/svg+xml" data="/images/dark/logo_icon.svg" ></object>
+					</a>
+					team.</p>
+				<p class="footer_copyright">&copy; RiftRocket <span class="footer__year">Year</span></p>
+			</div>
+			<p>All rights reserved</p>
+		</footer>
 		<script type="module" src="/src/index.ts"></script>
 	</body>
 </html>
