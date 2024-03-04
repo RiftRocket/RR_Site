@@ -1,40 +1,40 @@
 .footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: var(--color-background-darker);
-  padding: 15px 0;
-  font-size: 1.6rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: var(--color-background-darker);
+	padding: 15px 0;
+	font-size: 1.6rem;
 
-  &__content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
-  }
+	&__content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 15px;
+	}
 
-  &__content-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	&__content-item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
-    &:first-child {
-      margin-right: 30px;
-    }
-  }
+		&:first-child {
+			margin-right: 30px;
+		}
+	}
 
-  &__logo {
-    width: 20px;
-    height: 20px;
-    //fixes alignment due to svg origin point
-    transform: translateY(2px);
-    //the object should not be clickable as it messes with link tag functionality
-    pointer-events: none;
-  }
+	&__logo {
+		width: 20px;
+		height: 20px;
+		//fixes alignment due to svg origin point
+		transform: translateY(2px);
+		//the object should not be clickable as it messes with link tag functionality
+		pointer-events: none;
+	}
 
-  &__logo-link {
-    padding: 0 5px;
-    cursor: pointer;
-  }
+	&__logo-link {
+		padding: 0 5px;
+		cursor: pointer;
+	}
 }
