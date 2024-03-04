@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<svg
+   width="22.229527mm"
+   height="21.166668mm"
+   viewBox="0 0 22.229527 21.166668"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-13.012188,-133.78958)">
+    <g
+       id="g4-0-9"
+       transform="matrix(0.09247035,0.27210731,-0.27210731,0.09247035,44.943922,92.535824)">
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.527651;stroke-linecap:square;stroke-opacity:1;paint-order:markers stroke fill;"
+         d="m 133.11705,91.072417 -29.76906,63.858233 8.38918,4.8435 9.68667,-12.09129 h 5.8813 l -3.64237,6.30876 h 9.45428 9.45428 l -3.64237,-6.30876 h 5.8813 l 9.68667,12.09129 8.38918,-4.8435 z"
+         id="path1-7-8-2"
+         transform="translate(14.997339,-4.4584252)" />
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linecap:square;stroke-opacity:1;paint-order:markers stroke fill;"
+         d="m 139.66169,161.59783 0.52669,4.75108 c 0,0 1.69511,4.16367 3.21743,6.06744 0.63593,0.79528 2.54758,-6.35725 2.54758,-6.35725 0,0 0.50035,6.42554 3.30155,9.20864 2.8012,-2.7831 3.30155,-9.20864 3.30155,-9.20864 0,0 1.91165,7.15253 2.54758,6.35725 1.52232,-1.90377 3.21743,-6.06744 3.21743,-6.06744 l 0.52669,-4.75108"
+         id="path3-6-5-8"
+         transform="matrix(0.65967508,0,0,1.2059768,49.654625,-43.685263)" />
+      <ellipse
+         style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:3.96875;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill;"
+         id="path4-8-3-3"
+         cx="148.1144"
+         cy="108.52258"
+         rx="31.168556"
+         ry="7.6206398" />
+    </g>
+  </g>
+</svg>
