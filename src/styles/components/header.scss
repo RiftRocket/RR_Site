@@ -40,11 +40,10 @@
             margin-left: 0;
         }
 
-        &:last-child:hover{
+        &:hover{
             color: var(--color-text-secondary);
         }
     }
-
 
     &__logo-link{
         cursor: pointer;  
