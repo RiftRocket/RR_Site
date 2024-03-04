@@ -19,10 +19,10 @@
         justify-content: center;
         flex-shrink: 5;
         margin-left: 3rem;
-        padding: 15px 0;
+        padding: 1.5rem 0;
     }
 
-    &__content-item:nth-of-type(2){
+    &__menu-item-container{
         display: none;
     }
 
@@ -30,9 +30,7 @@
         display: inline-block;
         margin-left: 0.2rem;
         cursor: pointer;
-        text-decoration: none;
-        transform: translateY(1.3px);
-        
+        text-decoration: none;    
 
         &:visited{
             color: var(--color-text-primary);
@@ -51,7 +49,7 @@
         cursor: pointer;  
         display: flex;
         justify-content: center;
-        padding: 5px 0;
+        padding: 0.5rem 0;
     }
 
     &__logo{
@@ -73,13 +71,14 @@
         animation: menuItemAppear 0.3s linear;
         }
 
-        &__contentitem:first-child{
+        &__content-item{
             margin-left: 3rem;
         }
 
-        &__content-item:nth-of-type(2){
+        &__menu-item-container{
             display: flex;
             margin-right: 3rem;
+            margin-left: 0;
         }
     
         &__menu-icon{
