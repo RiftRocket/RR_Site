@@ -72,14 +72,3 @@
 		}
 	}
 }
-
-@keyframes menuItemAppear {
-	from {
-		display: none;
-		opacity: 0;
-	}
-	to {
-		display: flex;
-		opacity: 1;
-	}
-}
