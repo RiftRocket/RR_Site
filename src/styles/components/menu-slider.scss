@@ -11,6 +11,10 @@
 		border-radius: 0.5rem;
 		overflow-x: hidden;
 		transition: 0.5s;
+
+		@include responsive('tablet') {
+				display: none;
+		}
 	}
 
 	&__slider--active {
@@ -64,11 +68,5 @@
 
 	&__button-cross {
 		pointer-events: none;
-	}
-
-	@include responsive('tablet') {
-		&__slider {
-			display: none;
-		}
 	}
 }
