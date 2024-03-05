@@ -67,10 +67,15 @@
 	&__menu-icon {
 		display: flex;
 		justify-content: center;
+		cursor: pointer;
 
 		@include responsive('tablet') {
 			display: none;
 		}
+	}
+
+	&__menu-icon-hamburger {
+		pointer-events: none;
 	}
 }
 
