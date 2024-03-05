@@ -4,7 +4,7 @@
 		top: 0;
 		right: 0;
 		height: 100%;
-		width: 100%;
+		width: 0;
 		background-color: var(--color-text-secondary);
 		z-index: 2000;
 		padding-top: 3.4rem;
@@ -18,7 +18,7 @@
 	}
 
 	&__slider--active {
-		width: 0;
+		width: 100%;
 	}
 
 	&__slider-item-container {
@@ -43,7 +43,6 @@
 		text-align: center;
 		margin: 2rem 2rem;
 		font-size: 2.5rem;
-		transition: 0.1s;
 
 		&:visited {
 			color: var(--color-text-primary);

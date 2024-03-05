@@ -1,10 +1,10 @@
-export class Header {
-	private readonly closeButton: Element | null;
+export class HeaderMenu {
 	private readonly menuSlider: Element | null;
+	private readonly menuSliderCloseButton: Element | null;
 	private readonly menuButton: Element | null;
 
 	constructor() {
-		this.closeButton = document.querySelector('.header-menu__button-close');
+		this.menuSliderCloseButton = document.querySelector('.header-menu__button-close');
 		this.menuSlider = document.querySelector('.header-menu__slider');
 		this.menuButton = document.querySelector('.header__menu-icon');
 
@@ -14,8 +14,8 @@ export class Header {
 			});
 		}
 
-		if (this.closeButton) {
-			this.closeButton.addEventListener('click', () => {
+		if (this.menuSliderCloseButton) {
+			this.menuSliderCloseButton.addEventListener('click', () => {
 				this.toggleMenu();
 			});
 		}
