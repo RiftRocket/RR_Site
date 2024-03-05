@@ -5,56 +5,61 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>RiftRocket</title>
 		<link
-			href="/images/light/logo_favicon.svg"
+			href="/images/light/logo_favicon_light.svg"
 			rel="icon"
 			media="(prefers-color-scheme: light)"
 		/>
 		<link
-			href="/images/dark/logo_favicon.svg"
+			href="/images/dark/logo_favicon_dark.svg"
 			rel="icon"
 			media="(prefers-color-scheme: dark)"
 		/>
-		<style>
-			.under-construction {
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				text-align: center;
-			}
-		</style>
 	</head>
 	<body>
 		<header class="header">
 			<div class="header__content">
 				<div class="header__content-item">
 					<a
-					class="header__logo-link"
-					href="/"
-					aria-label="Rift Rocket Logo Link">
-						<object class='header__logo'
-							data="/images/dark/Logo_Full.svg"
+						class="header__logo-link"
+						href="/"
+						aria-label="Rift Rocket Logo Link"
+					>
+						<object
+							class="header__logo"
+							data="/images/dark/logo_full_dark.svg"
 							type="image/svg+xml"
 						></object>
 					</a>
 				</div>
 				<div class="header__content-item header__menu-item-container">
-					<a class="header__menu-item" href="/">Blog</a>
-					<a class="header__menu-item" href="/">Tools</a>
 					<a class="header__menu-item" href="/">Software</a>
+					<a class="header__menu-item" href="/">Tools</a>
+					<a class="header__menu-item" href="/">Blog</a>
 				</div>
 				<a class="header__menu-icon">
 					<object
-					type="image/svg+xml"
-					data= "/images/light/Menu_Icon_Light.svg">
-					</object>
+						type="image/svg+xml"
+						data="/images/light/menu_icon_light.svg"
+					></object>
 				</a>
 			</div>
 		</header>
 		<main>
-			<section class="under-construction">
-				<h1>RiftRocket.com</h1>
-				<p>Under Construction</p>
+			<section class="hero">
+				<div class="hero__content-container">
+					<div class="hero__content">
+						<h1 class="hero__title">
+							We are your spacecraft through the coding cosmos
+						</h1>
+					</div>
+				</div>
+				<div class="hero__background-container">
+					<object
+						class="hero__background"
+						type="image/svg+xml"
+						data="/images/background/galaxy-background.svg"
+					></object>
+				</div>
 			</section>
 		</main>
 		<footer class="footer">
@@ -69,7 +74,7 @@
 						<object
 							class="footer__logo"
 							type="image/svg+xml"
-							data="/images/dark/logo_icon.svg"
+							data="/images/dark/logo_icon_dark.svg"
 						></object>
 					</a>
 					team.

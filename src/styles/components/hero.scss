@@ -1,0 +1,71 @@
+@import '../mixins';
+
+.hero {
+	background: var(--color-background);
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	position: relative;
+
+	&__content-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 999;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		max-width: 80%;
+	}
+
+	&__title {
+		font-size: 3rem;
+		font-weight: var(--weight-medium);
+		text-align: center;
+	}
+
+	&__subtitle {
+		font-size: 2.2rem;
+		font-weight: var(--weight-medium);
+		text-align: center;
+	}
+
+	&__background-container {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		right: 0;
+		top: 0;
+		z-index: 888;
+	}
+
+	&__background {
+		position: absolute;
+		animation: hero-rotation 10s linear infinite;
+		pointer-events: none;
+		height: 200%;
+		width: 200%;
+		right: -100%;
+		top: -110%;
+	}
+}
+
+@keyframes hero-rotation {
+	from {
+		transform: rotate(360deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}
