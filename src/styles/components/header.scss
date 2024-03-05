@@ -95,12 +95,20 @@
 		transition: 0.5s
 	}
 
+	&__slider-item-container{
+		display: flex;
+		align-self: center;
+		justify-content: center;
+		flex-direction: column;
+		margin-top: 5rem;
+	}
+
 	&__slider-item{
 		display: block;
 		text-decoration: none;
 		text-align: center;
-		margin: 7rem 2rem;
-		font-size: 2.1rem;
+		margin: 2rem 2rem;
+		font-size: 2.5rem;
 		transition: 0.1s;
 
 		&:visited{
