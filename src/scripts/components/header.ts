@@ -4,12 +4,12 @@ const menuBTN: HTMLElement | null = document.querySelector('.header__menu-icon')
 
 menuBTN?.addEventListener('click', function() {
 	if (menuSlider) {
-    	menuSlider.style.width = '15rem';
+		menuSlider.style.width = '15rem';
 	}
 });
 
 closeBTN?.addEventListener('click', function() {
 	if (menuSlider) {
-    	menuSlider.style.width = '0';
+		menuSlider.style.width = '0';
 	}
 });
