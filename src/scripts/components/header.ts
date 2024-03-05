@@ -4,8 +4,8 @@ export class Header {
 	private readonly menuBTN: Element | null;
 
 	constructor() {
-		this.closeBTN = document.querySelector('.menu__button-close');
-		this.menuSlider = document.querySelector('.menu__slider');
+		this.closeBTN = document.querySelector('.header-menu__button-close');
+		this.menuSlider = document.querySelector('.header-menu__slider');
 		this.menuBTN = document.querySelector('.header__menu-icon');
 
 		if (this.menuBTN) {
@@ -23,7 +23,7 @@ export class Header {
 
 	toggleMenu() {
 		if (this.menuSlider) {
-			this.menuSlider.classList.toggle('menu__slider--active');
+			this.menuSlider.classList.toggle('header-menu__slider--active');
 		}
 	}
 }
