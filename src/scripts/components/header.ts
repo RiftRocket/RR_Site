@@ -1,18 +1,29 @@
-const closeBTN: HTMLElement | null = document.querySelector(
-	'.menu__button-close'
-);
-const menuSlider: HTMLElement | null = document.querySelector('.menu__slider');
-const menuBTN: HTMLElement | null =
-	document.querySelector('.header__menu-icon');
+export class Header {
+	private readonly closeBTN: Element | null;
+	private readonly menuSlider: Element | null;
+	private readonly menuBTN: Element | null;
 
-menuBTN?.addEventListener('click', function () {
-	if (menuSlider) {
-		menuSlider.style.width = '100%';
-	}
-});
+	constructor() {
+		this.closeBTN = document.querySelector('.menu__button-close');
+		this.menuSlider = document.querySelector('.menu__slider');
+		this.menuBTN = document.querySelector('.header__menu-icon');
 
-closeBTN?.addEventListener('click', function () {
-	if (menuSlider) {
-		menuSlider.style.width = '0';
+		if (this.menuBTN) {
+			this.menuBTN.addEventListener('click', () => {
+				this.toggleMenu();
+			});
+		}
+
+		if (this.closeBTN) {
+			this.closeBTN.addEventListener('click', () => {
+				this.toggleMenu();
+			});
+		}
 	}
-});
+
+	toggleMenu() {
+		if (this.menuSlider) {
+			this.menuSlider.classList.toggle('menu__slider--active');
+		}
+	}
+}
