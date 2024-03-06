@@ -34,7 +34,7 @@ export class NavigationSlider {
 			this.menuSlider.classList.toggle(
 				'navigation-slider__slider--active'
 			);
-			let hasActiveClass = this.menuSlider.classList.contains(
+			const hasActiveClass = this.menuSlider.classList.contains(
 				'navigation-slider__slider--active'
 			);
 
