@@ -4,9 +4,10 @@
 @import './styles/variables';
 @import './styles/typography';
 @import './styles/global';
+@import './styles/animations';
 
 //Component Styles
-@import 'styles/components/header';
-@import 'styles/components/footer';
-@import 'styles/components/hero';
-@import 'styles/components/menu-slider';
+@import 'styles/components/Header';
+@import 'styles/components/Footer';
+@import 'styles/components/Hero';
+@import 'styles/components/HeaderMenu';

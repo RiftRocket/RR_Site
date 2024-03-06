@@ -1,5 +1,3 @@
-@import '../mixins';
-
 .header {
 	background: var(--color-background-darker);
 	font-size: 1.6rem;
@@ -48,7 +46,11 @@
 		@include responsive('tablet') {
 			font-size: 2rem;
 			margin-left: 3rem;
-			animation: menuItemAppear 0.3s linear;
+			animation: opacityFadeIn 0.3s linear;
+		}
+
+		@include prefers-reduced-motion {
+			animation: none;
 		}
 	}
 
@@ -76,16 +78,5 @@
 
 	&__menu-icon-hamburger {
 		pointer-events: none;
-	}
-}
-
-@keyframes menuItemAppear {
-	from {
-		display: none;
-		opacity: 0;
-	}
-	to {
-		display: flex;
-		opacity: 1;
 	}
 }
