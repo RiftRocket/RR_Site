@@ -8,10 +8,10 @@ export class NavigationSlider {
 		this.menuSliderCloseButton = document.querySelector(
 			'.navigation-slider__button-close'
 		);
-		this.menuSlider = document.querySelector('.navigation-slider__slider');
+		this.menuSlider = document.querySelector('.navigation-slider');
 		this.menuButton = document.querySelector('.header__menu-icon');
 		this.menuNav = document.querySelector(
-			'.navigation-slider__slider-item-container'
+			'.navigation-slider__nav-container'
 		);
 
 		this.menuSlider?.setAttribute('aria-expanded', 'false');
@@ -32,10 +32,10 @@ export class NavigationSlider {
 	toggleMenu() {
 		if (this.menuSlider) {
 			this.menuSlider.classList.toggle(
-				'navigation-slider__slider--active'
+				'navigation-slider--active'
 			);
 			const hasActiveClass = this.menuSlider.classList.contains(
-				'navigation-slider__slider--active'
+				'navigation-slider--active'
 			);
 
 			if (hasActiveClass) {

@@ -1,29 +1,27 @@
 .navigation-slider {
-	&__slider {
-		position: fixed;
-		top: 0;
-		right: 0;
-		height: 100%;
-		width: 0;
-		background-color: var(--color-text-secondary);
-		z-index: 2000;
-		padding-top: 3.4rem;
-		border-radius: 0.5rem;
-		overflow-x: hidden;
-		transition: 0.5s;
-		display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 0;
+	background-color: var(--color-text-secondary);
+	z-index: 2000;
+	padding-top: 3.4rem;
+	border-radius: 0.5rem;
+	overflow-x: hidden;
+	transition: 0.5s;
+	display: none;
 
-		@include prefers-reduced-motion {
-			transition: none;
-		}
+	@include prefers-reduced-motion {
+		transition: none;
 	}
 
-	&__slider--active {
+	&--active {
 		display: block;
 		width: 100%;
 	}
 
-	&__slider-item-container {
+	&__nav-container {
 		display: flex;
 		align-self: center;
 		justify-content: center;
@@ -31,15 +29,7 @@
 		margin-top: 5rem;
 	}
 
-	&__slider-item-container {
-		display: flex;
-		align-self: center;
-		justify-content: center;
-		flex-direction: column;
-		margin-top: 5rem;
-	}
-
-	&__slider-item {
+	&__nav-item {
 		display: block;
 		text-decoration: none;
 		text-align: center;
