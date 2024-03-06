@@ -22,41 +22,45 @@
 					<a
 						class="header__logo-link"
 						href="/"
-						aria-label="Rift Rocket Logo Link"
+						aria-label="Home"
 					>
 						<object
 							class="header__logo"
 							data="/images/dark/logo_full_dark.svg"
 							type="image/svg+xml"
+							role="img"
+							aria-label="Rift Rocket Logo"
 						></object>
 					</a>
 				</div>
-				<div class="header__content-item header__menu-item-container">
+				<nav class="header__content-item header__menu-item-container">
 					<a class="header__menu-item" href="/">Software</a>
 					<a class="header__menu-item" href="/">Tools</a>
 					<a class="header__menu-item" href="/">Blog</a>
-				</div>
-				<a class="header__menu-icon">
+				</nav>
+				<button class="header__menu-icon" aria-label="menu">
 					<object
 						class="header__menu-icon-hamburger"
 						type="image/svg+xml"
 						data="/images/light/menu_icon_light.svg"
+						role="img"
 					></object>
-				</a>
+				</button>
 			</div>
-			<div class="header-menu__slider">
+			<div class="header-menu__slider" aria-expanded="false">
 				<a class="header-menu__button-close">
 					<object
 						class="header-menu__button-cross"
 						data="/images/dark/menu_close_icon_dark.svg"
 						type="image/svg+xml"
+						role="img"
 					></object>
 				</a>
-				<div class="header-menu__slider-item-container">
+				<nav class="header-menu__slider-item-container">
 					<a class="header-menu__slider-item" href="/">Software</a>
 					<a class="header-menu__slider-item" href="/">Tools</a>
 					<a class="header-menu__slider-item" href="/">Blog</a>
-				</div>
+				</nav>
 			</div>
 		</header>
 		<main>
@@ -73,6 +77,7 @@
 						class="hero__background"
 						type="image/svg+xml"
 						data="/images/background/galaxy-background.svg"
+						role="img"
 					></object>
 				</div>
 			</section>
@@ -84,12 +89,13 @@
 					<a
 						class="footer__logo-link"
 						href="/"
-						aria-label="Rift Rocket Logo Link"
+						aria-label="home"
 					>
 						<object
 							class="footer__logo"
 							type="image/svg+xml"
 							data="/images/dark/logo_icon_dark.svg"
+							role="img"
 						></object>
 					</a>
 					team.

@@ -70,6 +70,8 @@
 		display: flex;
 		justify-content: center;
 		cursor: pointer;
+		background: transparent;
+		border: none;
 
 		@include responsive('tablet') {
 			display: none;

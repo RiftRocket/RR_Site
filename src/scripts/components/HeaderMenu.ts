@@ -8,6 +8,8 @@ export class HeaderMenu {
 		this.menuSlider = document.querySelector('.header-menu__slider');
 		this.menuButton = document.querySelector('.header__menu-icon');
 
+		this.menuSlider?.setAttribute('aria-expanded',"false");
+
 		if (this.menuButton) {
 			this.menuButton.addEventListener('click', () => {
 				this.toggleMenu();
@@ -23,7 +25,10 @@ export class HeaderMenu {
 
 	toggleMenu() {
 		if (this.menuSlider) {
+			const IsAriaExpanded = this.menuSlider.getAttribute('aria-expanded') === "true";
 			this.menuSlider.classList.toggle('header-menu__slider--active');
+			this.menuSlider.setAttribute('aria-expanded',`${!IsAriaExpanded}`)
+
 		}
 	}
 }
