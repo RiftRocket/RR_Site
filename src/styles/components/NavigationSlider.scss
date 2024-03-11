@@ -5,8 +5,7 @@
 	height: 100%;
 	width: 0;
 	background-color: var(--color-text-secondary);
-	z-index: 2000;
-	padding-top: 3.4rem;
+	z-index: 1111;
 	border-radius: 0.5rem;
 	overflow-x: hidden;
 	transition: 0.5s;
@@ -26,14 +25,14 @@
 		align-self: center;
 		justify-content: center;
 		flex-direction: column;
-		margin-top: 5rem;
+		padding: 2rem;
 	}
 
 	&__nav-item {
 		display: block;
 		text-decoration: none;
 		text-align: center;
-		margin: 2rem 2rem;
+		margin: 0 0 2rem;
 		font-size: 2.5rem;
 
 		&:visited {
@@ -51,17 +50,15 @@
 	}
 
 	&__button-close {
-		display: flex;
-		justify-content: center;
-		position: absolute;
-		top: 1rem;
-		left: 1rem;
 		cursor: pointer;
-		width: 3rem;
-		height: 3rem;
+		border: none;
+		background: none;
+		align-self: flex-start;
 	}
 
 	&__button-cross {
 		pointer-events: none;
+		width: 2rem;
+		height: 2rem;
 	}
 }
