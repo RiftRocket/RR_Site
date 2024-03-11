@@ -22,43 +22,65 @@
 					<a
 						class="header__logo-link"
 						href="/"
-						aria-label="Rift Rocket Logo Link"
+						aria-label="Home link, logo"
 					>
 						<object
 							class="header__logo"
 							data="/images/dark/logo_full_dark.svg"
 							type="image/svg+xml"
+							role="img"
+							aria-label="Rift Rocket Logo"
 						></object>
 					</a>
 				</div>
-				<div class="header__content-item header__menu-item-container">
-					<a class="header__menu-item" href="/">Software</a>
-					<a class="header__menu-item" href="/">Tools</a>
-					<a class="header__menu-item" href="/">Blog</a>
-				</div>
-				<a class="header__menu-icon">
+				<nav
+					role="navigation"
+					class="header__content-item header__menu-item-container"
+				>
+					<a role="menuitem" class="header__menu-item" href="/"
+						>Software</a
+					>
+					<a role="menuitem" class="header__menu-item" href="/"
+						>Tools</a
+					>
+					<a role="menuitem" class="header__menu-item" href="/"
+						>Blog</a
+					>
+				</nav>
+				<button class="header__menu-icon" aria-label="toggle menu">
 					<object
 						class="header__menu-icon-hamburger"
 						type="image/svg+xml"
 						data="/images/light/menu_icon_light.svg"
+						role="img"
 					></object>
-				</a>
-			</div>
-			<div class="header-menu__slider">
-				<a class="header-menu__button-close">
-					<object
-						class="header-menu__button-cross"
-						data="/images/dark/menu_close_icon_dark.svg"
-						type="image/svg+xml"
-					></object>
-				</a>
-				<div class="header-menu__slider-item-container">
-					<a class="header-menu__slider-item" href="/">Software</a>
-					<a class="header-menu__slider-item" href="/">Tools</a>
-					<a class="header-menu__slider-item" href="/">Blog</a>
-				</div>
+				</button>
 			</div>
 		</header>
+		<nav role="navigation" class="navigation-slider" aria-expanded="false">
+			<div class="navigation-slider__nav-container">
+				<button
+					aria-label="close menu"
+					class="navigation-slider__nav-item navigation-slider__button-close"
+				>
+					<object
+						class="navigation-slider__button-cross"
+						data="/images/dark/menu_close_icon_dark.svg"
+						type="image/svg+xml"
+						role="img"
+					></object>
+				</button>
+				<a role="menuitem" class="navigation-slider__nav-item" href="/"
+					>Software</a
+				>
+				<a role="menuitem" class="navigation-slider__nav-item" href="/"
+					>Tools</a
+				>
+				<a role="menuitem" class="navigation-slider__nav-item" href="/"
+					>Blog</a
+				>
+			</div>
+		</nav>
 		<main>
 			<section class="hero">
 				<div class="hero__content-container">
@@ -70,9 +92,11 @@
 				</div>
 				<div class="hero__background-container">
 					<object
+						aria-hidden="true"
 						class="hero__background"
 						type="image/svg+xml"
 						data="/images/background/galaxy-background.svg"
+						role="img"
 					></object>
 				</div>
 			</section>
@@ -81,24 +105,22 @@
 			<div class="footer__content">
 				<p class="footer__content-item">
 					Made by the
-					<a
-						class="footer__logo-link"
-						href="/"
-						aria-label="Rift Rocket Logo Link"
-					>
+					<span class="footer__logo-icon">
 						<object
 							class="footer__logo"
 							type="image/svg+xml"
 							data="/images/dark/logo_icon_dark.svg"
+							role="img"
+							aria-label="rift rocket"
 						></object>
-					</a>
+					</span>
 					team.
 				</p>
-				<p class="footer_copyright">
-					&copy; RiftRocket <span class="footer__year">Year</span>
+				<p class="footer__content-item">
+					&copy; RiftRocket <span class="footer__year">Year</span>All
+					rights reserved
 				</p>
 			</div>
-			<p>All rights reserved</p>
 		</footer>
 		<script type="module" src="/src/index.ts"></script>
 	</body>

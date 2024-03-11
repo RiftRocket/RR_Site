@@ -1,8 +1,8 @@
 import './index.scss';
 import { Footer } from './scripts/components/Footer.ts';
-import { HeaderMenu } from './scripts/components/HeaderMenu.ts';
+import { NavigationSlider } from './scripts/components/NavigationSlider.ts';
 
 document.addEventListener('DOMContentLoaded', function () {
 	new Footer();
-	new HeaderMenu();
+	new NavigationSlider();
 });

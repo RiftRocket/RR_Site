@@ -4,7 +4,7 @@
 	align-items: center;
 	flex-direction: column;
 	background: var(--color-background-darker);
-	padding: 15px 0;
+	padding: 1.5rem 0;
 	font-size: 1.6rem;
 
 	&__content {
@@ -12,7 +12,6 @@
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		margin-bottom: 15px;
 
 		@include responsive('tablet') {
 			flex-direction: row;
@@ -27,24 +26,33 @@
 		align-items: center;
 		justify-content: center;
 
+		&:first-child {
+			margin-bottom: 1.5rem;
+		}
+
 		@include responsive('tablet') {
 			&:first-child {
-				margin-right: 30px;
+				margin-right: 3rem;
+				margin-bottom: 0;
 			}
 		}
 	}
 
 	&__logo {
-		width: 20px;
-		height: 20px;
+		width: 2rem;
+		height: 2rem;
 		//fixes alignment due to svg origin point
-		transform: translateY(2px);
+		transform: translateY(0.2rem);
 		//the object should not be clickable as it messes with link tag functionality
 		pointer-events: none;
 	}
 
-	&__logo-link {
-		padding: 0 5px;
+	&__year {
+		margin-right: 1rem;
+	}
+
+	&__logo-icon {
+		padding: 0 0.5rem;
 		cursor: pointer;
 	}
 }

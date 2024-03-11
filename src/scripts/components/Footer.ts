@@ -1,5 +1,5 @@
 export class Footer {
-	private readonly footerYearElement: Element | null;
+	private readonly footerYearElement: HTMLElement | null;
 	constructor() {
 		this.footerYearElement = document.querySelector('.footer__year');
 		this.addCurrentYearFooter();
