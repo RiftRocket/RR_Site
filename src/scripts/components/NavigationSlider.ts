@@ -1,7 +1,7 @@
 export class NavigationSlider {
-	private readonly menuSlider: HTMLElement | null  = null;
-	private readonly menuSliderCloseButton: HTMLElement | null  = null;
-	private readonly menuButton: HTMLElement | null  = null;
+	private readonly menuSlider: HTMLElement | null = null;
+	private readonly menuSliderCloseButton: HTMLElement | null = null;
+	private readonly menuButton: HTMLElement | null = null;
 	private readonly menuItems: NodeListOf<HTMLElement> | null = null;
 
 	private readonly firstMenuItem: HTMLElement | null = null;
@@ -17,10 +17,13 @@ export class NavigationSlider {
 		this.menuButton = document.querySelector('.header__menu-icon');
 		this.headerLogoLink = document.querySelector('.header__logo-link');
 
-		this.menuItems = document.querySelectorAll('.navigation-slider__nav-item');
-		if(this.menuItems) {
+		this.menuItems = document.querySelectorAll(
+			'.navigation-slider__nav-item'
+		);
+		if (this.menuItems) {
 			this.firstMenuItem = this.menuItems[0] || null;
-			this.lastMenuItem = this.menuItems[this.menuItems.length - 1] || null;
+			this.lastMenuItem =
+				this.menuItems[this.menuItems.length - 1] || null;
 		}
 
 		this.menuSlider?.setAttribute('aria-expanded', 'false');
@@ -40,10 +43,10 @@ export class NavigationSlider {
 			});
 		}
 
-		if(this.lastMenuItem) {
-			this.lastMenuItem.addEventListener('blur',() => {
+		if (this.lastMenuItem) {
+			this.lastMenuItem.addEventListener('blur', () => {
 				this.firstMenuItem?.focus();
-			})
+			});
 		}
 	}
 
@@ -57,8 +60,7 @@ export class NavigationSlider {
 
 			if (hasActiveClass) {
 				this.firstMenuItem?.focus();
-			}
-			else {
+			} else {
 				this.headerLogoLink?.focus();
 			}
 
